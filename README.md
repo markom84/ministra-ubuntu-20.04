@@ -31,7 +31,7 @@ rm -rf *.zip
 
 # Create Database ( there is some changes due to Mysql 8.X)
 mysql -uroot -e "CREATE DATABASE stalker_db;"
-mysql -uroot -e "CREATE USER stalker@localhost IDENTIFIED BY '1';"
+mysql -uroot -e "CREATE USER stalker@localhost IDENTIFIED WITH mysql_native_password BY '1';"
 mysql -uroot -e "GRANT ALL PRIVILEGES ON stalker_db.* TO stalker@localhost WITH GRANT OPTION;"
 
 # Install NPM  2.5.11
