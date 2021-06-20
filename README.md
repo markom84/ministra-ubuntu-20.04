@@ -10,7 +10,7 @@
 
 3. Install and configure the required services and packages:
 ```bash
-# Ubuntu 18.04 has php7.2 as the default version of PHP but ministry 5.6.1 can work with PHP version <= 7.1 So, we'll use php7.0.
+# Ubuntu 20.04 has php7.2+ as the default version of PHP but ministry 5.6.1 can work with PHP version <= 7.1 So, we'll use php7.0.
 # Add repository for php7.0
 apt install software-properties-common & add-apt-repository ppa:ondrej/php 
 apt update & apt upgrade -y 
